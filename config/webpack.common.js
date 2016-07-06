@@ -3,7 +3,6 @@ const helpers = require('./helpers');
 
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin;
 const ProvidePlugin = require('webpack/lib/ProvidePlugin');
 
 const METADATA = {
@@ -47,8 +46,6 @@ module.exports = {
 
 
   plugins: [
-
-    new ForkCheckerPlugin(),
 
     new webpack.optimize.OccurenceOrderPlugin(true),
 
